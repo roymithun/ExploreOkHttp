@@ -7,6 +7,11 @@ use [OkHttp](https://square.github.io/okhttp/) a modern applications HTTP client
 - Use and configure OkHttpClient.Builder to get OkHttpClient. Add interceptors, such as HttpLoggingInterceptor, or create
 custom interceptors, serving different purposes, such as authentication, or add custom headers.
 
+### Dependencies
+- com.squareup.okhttp3:okhttp:4.10.0
+- com.squareup.okhttp3:logging-interceptor:4.10.0
+- com.google.code.gson:gson:2.9.0
+
 **[TODO]** Explore authenticator use cases.
 
 ## References
