@@ -13,9 +13,13 @@ repositories {
 }
 
 dependencies {
+    // https://developer.android.com/studio/build/dependencies#dependency_configurations
     implementation("com.squareup.okhttp3:okhttp:4.10.0")
     implementation("com.google.code.gson:gson:2.9.0")
     implementation("com.squareup.okhttp3:logging-interceptor:4.10.0")
+
+//    implementation("io.github.microutils:kotlin-logging-jvm:2.1.23")
+
     testImplementation(kotlin("test"))
 }
 
