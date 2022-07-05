@@ -4,8 +4,18 @@ An exploratory console application written in [kotlin](https://kotlinlang.org/) 
 use [OkHttp](https://square.github.io/okhttp/) a modern applications HTTP client.
 
 ## What can you find?
-- Use and configure OkHttpClient.Builder to get OkHttpClient. Add interceptors, such as HttpLoggingInterceptor, or create
-custom interceptors, serving different purposes, such as authentication, or add custom headers.
+- Use and configure OkHttpClient.Builder to get OkHttpClient. 
+- Add interceptors, such as 
+  - HttpLoggingInterceptor 
+  - custom interceptors, serving different purposes, such as authentication, or add custom headers
+  - Network layer interceptor ***(such as to enable caching)***
+  - Application layer network interceptor ***(enforce cache to be used)***
+
+### OkHttp Interceptor design
+<img src="misc/images/interceptor_architecture.png" width="336" align="top" hspace="20">
+
+### Demo for network caching using interceptors
+<img src="misc/images/network_cache.gif" width="600" align="top" hspace="20">
 
 ### Dependencies
 - com.squareup.okhttp3:okhttp:4.10.0
